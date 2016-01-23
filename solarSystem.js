@@ -39,7 +39,7 @@
     ctx.arc(300,300,210,0,Math.PI*2,false); // Earth orbit
     ctx.stroke();
 
-    ctx.drawImage(sun,0,0,300,300);
+    ctx.drawImage(sun,0,0,600,600);
 
     window.requestAnimationFrame(draw);
     }
