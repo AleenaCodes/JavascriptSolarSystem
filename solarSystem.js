@@ -2,7 +2,7 @@
     var moon = new Image();
     var earth = new Image();
     function init(){
-    sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+    sun.src = 'sun.png';
     moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
     earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
     window.requestAnimationFrame(draw);
