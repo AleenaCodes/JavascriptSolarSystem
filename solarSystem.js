@@ -17,7 +17,7 @@
     ctx.fillStyle = 'rgba(0,0,0,0.4)';
     ctx.strokeStyle = 'rgba(0,153,255,0.4)';
     ctx.save();
-    ctx.translate(150,150);
+    ctx.translate(300,300);
 
     // Earth
     var time = new Date();
@@ -36,7 +36,7 @@
     ctx.restore();
 
     ctx.beginPath();
-    ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+    ctx.arc(300,300,210,0,Math.PI*2,false); // Earth orbit
     ctx.stroke();
 
     ctx.drawImage(sun,0,0,600,600);
