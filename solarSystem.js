@@ -27,11 +27,11 @@
     ctx.drawImage(earth,-12,-12);
 
     // Moon
-    ctx.save();
-    ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
-    ctx.translate(0,57);
-    ctx.drawImage(moon,-3.5,-3.5);
-    ctx.restore();
+    //ctx.save();
+    //ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+    //ctx.translate(0,57);
+    //ctx.drawImage(moon,-3.5,-3.5);
+    //ctx.restore();
 
     ctx.restore();
 
