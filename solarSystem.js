@@ -7,7 +7,7 @@
   function init(){
     sun.src = 'sun.png';
     moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
-    earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+    earth.src = 'earth.png';
     window.requestAnimationFrame(draw); //60fps, call draw function to get each new frame
   }
 
