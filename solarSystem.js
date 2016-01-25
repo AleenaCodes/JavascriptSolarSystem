@@ -26,7 +26,7 @@
     // Earth
     var time = new Date(); //time (to move Earth around)
     ctx.rotate(((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds()); //rotation
-    ctx.translate(210,0); //translate (decide size of orbit)
+    ctx.translate(100,0); //translate (decide size of orbit)
     ctx.drawImage(earth,-12,-12); //draw Earth image
     ctx.translate(-210,0); //move back origin
 
@@ -41,14 +41,27 @@
     ctx.restore(); //restore to saved state
 
     ctx.beginPath();
-    ctx.arc(300,300,210,0,Math.PI*2,false); // Earth orbit
-    ctx.moveTo(400,300); //Move to draw moon orbit
-    ctx.arc(300,300,100,0,Math.PI*2,false); // Moon orbit
-    ctx.stroke();
+    ctx.arc(300,300,280,0,Math.PI*2,false); // Neptune orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,250,0,Math.PI*2,false); // Uranus orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,210,0,Math.PI*2,false); // Saturn orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,170,0,Math.PI*2,false); // Jupiter orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,130,0,Math.PI*2,false); // Mars orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,100,0,Math.PI*2,false); // Earth orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,70,0,Math.PI*2,false); // Venus orbit
+    //ctx.moveTo(400,300);
+    ctx.arc(300,300,40,0,Math.PI*2,false); // Mercury orbit
+    //ctx.moveTo(400,300);
+    ctx.stroke(); //draw
 
-    ctx.drawImage(sun,0,0,600,600);
+    ctx.drawImage(sun,0,0,600,600); //draw sun (background)
 
-    window.requestAnimationFrame(draw);
+    window.requestAnimationFrame(draw); //request next frame
   }
 
-  init();
+  init(); //start
